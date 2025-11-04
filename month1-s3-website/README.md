@@ -30,9 +30,7 @@ I created a static portfolio website and deployed it using AWS S3 with public ho
 
 Through this project I learned how AWS S3 serves as more than just storage - it can function as a complete web hosting platform for static content. I configured bucket policies to allow public read access while maintaining security, which is a critical skill for cloud security roles. Understanding the distinction between bucket-level and object-level permissions helped me grasp AWS security models.
 
-**Architecture Highlights**
-
-The website uses a single S3 bucket configured with static website hosting enabled. I implemented a bucket policy that allows public GetObject permissions while blocking all other operations, following the principle of least privilege. The S3 endpoint automatically serves the index.html file as the default document.
+**Architecture Highlights** - The website uses a single S3 bucket configured with static website hosting enabled. I implemented a bucket policy that allows public GetObject permissions while blocking all other operations, following the principle of least privilege. The S3 endpoint automatically serves the index.html file as the default document.
 
 **AWS S3 Static Website Hosting Architecture**
 
