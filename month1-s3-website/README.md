@@ -27,4 +27,7 @@ Architecture Highlights
 
 The website uses a single S3 bucket configured with static website hosting enabled. I implemented a bucket policy that allows public GetObject permissions while blocking all other operations, following the principle of least privilege. The S3 endpoint automatically serves the index.html file as the default document.
 
+**AWS S3 Static Website Hosting Architecture**
+
+
 <img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/3a55b4ba-4a98-499a-99e3-5dc04d24ed59" />
