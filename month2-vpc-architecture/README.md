@@ -1,4 +1,4 @@
-Project 2: Secure VPC Architecture with Multi-Layer Defense
+# Project 2: Secure VPC Architecture with Multi-Layer Defense
 
 **Technical Challenge:** Design and implement a complete virtual network infrastructure that segregates resources by security level, implements multiple firewall layers, and provides controlled access paths for both user traffic and administrative operations.
 
