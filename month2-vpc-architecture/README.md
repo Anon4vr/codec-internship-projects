@@ -37,17 +37,7 @@ Technical Artifacts: Complete set of architecture diagrams showing network topol
 
 **Technologies Used**
 
-AWS VPC (Virtual Private Cloud)
-
-AWS EC2 (Elastic Compute Cloud)
-
-Application Load Balancer
-
-NAT Gateway
-
-Security Groups
-
-Network Access Control Lists (NACLs)
+AWS VPC (Virtual Private Cloud), AWS EC2 (Elastic Compute Cloud), Application Load Balancer, NAT Gateway, Security Groups, Network Access Control Lists (NACLs)
 
 Elastic IP
 
