@@ -53,3 +53,7 @@ Multiple Availability Zones
 **Why This Architecture Matters for Cybersecurity:** This project directly applies to cloud security roles because it demonstrates several critical concepts. Network segmentation limits the blast radius of any security breach - if the load balancer were compromised, the attacker still cannot directly access the web server. Defense-in-depth ensures that bypassing one security control does not grant full access. The principle of least privilege is applied at every layer, with each component having only the minimum permissions needed. The architecture is auditable, with clear entry and exit points for traffic that can be logged and monitored.
 
 **Technical Challenges Solved:** During implementation I learned that AWS Load Balancers require at least two availability zones, which taught me about high availability requirements. I configured routing tables properly to ensure the private subnet could reach the internet through NAT while remaining unreachable from the internet. I debugged security group rules to understand the difference between stateful (Security Groups) and stateless (NACLs) firewalls. I verified the architecture by confirming the web server had no public IP but was still accessible through the load balancer.
+
+
+<img width="1024" height="2082" alt="vpc-architecture-visual" src="https://github.com/user-attachments/assets/90985393-52fc-4cb5-b3b0-f8c49e51cb7f" />
+
