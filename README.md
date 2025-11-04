@@ -21,3 +21,6 @@ Cybersecurity Relevance: These projects directly relate to cloud security analys
 
 Future Learning Goals
 This internship has prepared me for several next steps in my cloud and cybersecurity career. I plan to pursue AWS Security Specialty certification to deepen my security knowledge, learn Infrastructure as Code using Terraform or CloudFormation to automate deployments, explore container security with Docker and Kubernetes, and study advanced topics like WAF implementation, DDoS protection, and security monitoring with CloudWatch and GuardDuty.
+
+Acknowledgments
+I would like to thank Codec Technologies for providing this learning opportunity, and specifically for the structured project approach that allowed me to progressively build my cloud computing skills from basic deployment to complex security architectures.
