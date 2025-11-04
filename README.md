@@ -1,9 +1,68 @@
-Codec Technologies - Cloud Computing Internship
-
+# Codec Technologies - Cloud Computing Internship Projects
 
 **Overview**
 
 This repository contains documentation and screenshots of three progressive cloud computing projects completed during my internship at Codec Technologies. Each project demonstrates different aspects of cloud infrastructure, security, and deployment strategies.
+
+
+## Month 1: AWS S3 Static Website Hosting
+**Objective:** Deploy a static website using AWS S3
+
+**Technologies Used:** AWS S3, HTML, CSS
+
+**Screenshots:**
+- [S3 Bucket Configuration](month1/screenshot1.png)
+- [Live Website](month1/screenshot2.png)
+
+**What I Learned:** 
+- AWS S3 bucket policies
+- Static website hosting
+- Public access configuration
+
+---
+
+## Month 2: Secure VPC Architecture
+**Objective:** Design and implement a secure network architecture using VPC
+
+**Technologies Used:** AWS VPC, EC2, Security Groups, NACLs, NAT Gateway, Application Load Balancer
+
+**Architecture:**
+- Public Subnet (10.0.1.0/24) - Internet-facing resources
+- Private Subnet (10.0.2.0/24) - Protected backend servers
+- NAT Gateway for secure internet access from private subnet
+- Bastion Host for secure SSH access
+- Application Load Balancer for traffic distribution
+
+**Security Features:**
+- Multi-layered security (Security Groups + NACLs)
+- Private subnet isolation
+- Bastion host for controlled access
+- Defense-in-depth strategy
+
+**Screenshots:**
+- [VPC Architecture](month2/vpc-diagram.png)
+- [Load Balancer Active](month2/alb-active.png)
+- [Website Working](month2/website-working.png)
+- [All other screenshots...]
+
+---
+
+## Month 3: Cloud-Based Weather Application
+**Objective:** Build a weather application using cloud APIs
+
+**Technologies Used:** HTML, JavaScript, OpenWeather API, Netlify
+
+**Features:**
+- Real-time weather data
+- 5-day forecast
+- City search functionality
+- Responsive design
+
+**Live Demo:** [Your Netlify URL]
+
+**Screenshots:**
+- [App Screenshot](month3/weather-app.png)
+```
 
 Skills Demonstrated Across All Projects
 
