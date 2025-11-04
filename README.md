@@ -1,2 +1,2 @@
-# codec-internship-projects
+Codec Internship Projects
 Cloud Computing Internship Projects
