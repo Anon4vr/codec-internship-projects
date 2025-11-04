@@ -40,9 +40,9 @@ This repository contains documentation and screenshots of three progressive clou
 - Defense-in-depth strategy
 
 **Screenshots:**
-- [VPC Architecture](month2/vpc-diagram.png)
-- [Load Balancer Active](month2/alb-active.png)
-- [Website Working](month2/website-working.png)
+- [VPC Architecture](month2-vpc-architecture/screenshots)
+- [Load Balancer Active](month2-vpc-architecture/screenshots)
+- [Website Working](month2-vpc-architecture/screenshots)
 - [All other screenshots...]
 
 ---
@@ -54,14 +54,11 @@ This repository contains documentation and screenshots of three progressive clou
 
 **Features:**
 - Real-time weather data
-- 5-day forecast
 - City search functionality
 - Responsive design
 
-**Live Demo:** [Your Netlify URL]
-
 **Screenshots:**
-- [App Screenshot](month3/weather-app.png)
+- [App Screenshot](month3-weather-app/screenshots)
 ```
 
 Skills Demonstrated Across All Projects
