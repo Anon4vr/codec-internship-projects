@@ -11,8 +11,8 @@ This repository contains documentation and screenshots of three progressive clou
 **Technologies Used:** AWS S3, HTML, CSS
 
 **Screenshots:**
-- [S3 Bucket Configuration](month1-s3-website/screenshots/Screenshot-01.png)
-- [Live Website](month1-s3-website/screenshots/Screenshot-03.png)
+- [S3 Bucket Configuration](month1-s3-website/screenshots)
+- [Live Website](month1-s3-website/screenshots)
 
 **What I Learned:** 
 - AWS S3 bucket policies
