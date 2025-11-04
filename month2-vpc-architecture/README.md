@@ -38,12 +38,19 @@ Technical Artifacts: Complete set of architecture diagrams showing network topol
 **Technologies Used**
 
 AWS VPC (Virtual Private Cloud)
+
 AWS EC2 (Elastic Compute Cloud)
+
 Application Load Balancer
+
 NAT Gateway
+
 Security Groups
+
 Network Access Control Lists (NACLs)
+
 Elastic IP
+
 Multiple Availability Zones
 
 **Architecture Overview:** The architecture consists of a VPC with CIDR block 10.0.0.0/16, divided into public and private subnets across two availability zones for high availability. Public Subnet (10.0.1.0/24): This subnet hosts internet-facing resources including the Application Load Balancer which receives all incoming web traffic, the Bastion Host which serves as the secure entry point for SSH administration, and the NAT Gateway which provides controlled internet access for private subnet resources. Private Subnet (10.0.2.0/24): This isolated subnet hosts the actual web server, completely hidden from direct internet access. The web server can only be reached through the Application Load Balancer, implementing a zero-trust architecture where no direct connections are permitted.
