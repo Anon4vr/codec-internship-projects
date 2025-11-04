@@ -37,36 +37,19 @@ Real-World Application:
 This architecture pattern directly applies to production e-commerce sites, SaaS applications, and enterprise web services. The separation of public and private tiers scales from small applications to massive distributed systems. The security principles demonstrated here—network segmentation, defense-in-depth, bastion host patterns, load balancer protection—represent industry standard practices that security engineers implement in real-world cloud environments.
 Technical Artifacts: Complete set of architecture diagrams showing network topology, security group rules, NACL configurations, route tables, and traffic flow patterns. Screenshots demonstrate each security layer and the isolated nature of private subnet resources. Interactive HTML architecture visualization allows detailed exploration of the design.
 
-Technologies Used
+**Technologies Used**
 
 AWS VPC (Virtual Private Cloud)
-
 AWS EC2 (Elastic Compute Cloud)
-
 Application Load Balancer
-
 NAT Gateway
-
 Security Groups
-
 Network Access Control Lists (NACLs)
-
 Elastic IP
-
 Multiple Availability Zones
 
-Architecture Overview
+**Architecture Overview:** The architecture consists of a VPC with CIDR block 10.0.0.0/16, divided into public and private subnets across two availability zones for high availability. Public Subnet (10.0.1.0/24): This subnet hosts internet-facing resources including the Application Load Balancer which receives all incoming web traffic, the Bastion Host which serves as the secure entry point for SSH administration, and the NAT Gateway which provides controlled internet access for private subnet resources. Private Subnet (10.0.2.0/24): This isolated subnet hosts the actual web server, completely hidden from direct internet access. The web server can only be reached through the Application Load Balancer, implementing a zero-trust architecture where no direct connections are permitted.
 
-The architecture consists of a VPC with CIDR block 10.0.0.0/16, divided into public and private subnets across two availability zones for high availability.
+**Why This Architecture Matters for Cybersecurity:** This project directly applies to cloud security roles because it demonstrates several critical concepts. Network segmentation limits the blast radius of any security breach - if the load balancer were compromised, the attacker still cannot directly access the web server. Defense-in-depth ensures that bypassing one security control does not grant full access. The principle of least privilege is applied at every layer, with each component having only the minimum permissions needed. The architecture is auditable, with clear entry and exit points for traffic that can be logged and monitored.
 
-Public Subnet (10.0.1.0/24): This subnet hosts internet-facing resources including the Application Load Balancer which receives all incoming web traffic, the Bastion Host which serves as the secure entry point for SSH administration, and the NAT Gateway which provides controlled internet access for private subnet resources.
-
-Private Subnet (10.0.2.0/24): This isolated subnet hosts the actual web server, completely hidden from direct internet access. The web server can only be reached through the Application Load Balancer, implementing a zero-trust architecture where no direct connections are permitted.
-
-Why This Architecture Matters for Cybersecurity
-
-This project directly applies to cloud security roles because it demonstrates several critical concepts. Network segmentation limits the blast radius of any security breach - if the load balancer were compromised, the attacker still cannot directly access the web server. Defense-in-depth ensures that bypassing one security control does not grant full access. The principle of least privilege is applied at every layer, with each component having only the minimum permissions needed. The architecture is auditable, with clear entry and exit points for traffic that can be logged and monitored.
-
-Technical Challenges Solved
-
-During implementation I learned that AWS Load Balancers require at least two availability zones, which taught me about high availability requirements. I configured routing tables properly to ensure the private subnet could reach the internet through NAT while remaining unreachable from the internet. I debugged security group rules to understand the difference between stateful (Security Groups) and stateless (NACLs) firewalls. I verified the architecture by confirming the web server had no public IP but was still accessible through the load balancer.
+**Technical Challenges Solved:** During implementation I learned that AWS Load Balancers require at least two availability zones, which taught me about high availability requirements. I configured routing tables properly to ensure the private subnet could reach the internet through NAT while remaining unreachable from the internet. I debugged security group rules to understand the difference between stateful (Security Groups) and stateless (NACLs) firewalls. I verified the architecture by confirming the web server had no public IP but was still accessible through the load balancer.
