@@ -21,16 +21,8 @@ The error handling implementation distinguishes between different failure types.
 
 The Netlify deployment provides several production features automatically. It serves the application over HTTPS with automatically provisioned and renewed SSL certificates, protecting user data in transit. It uses a global content delivery network to cache the application code near users worldwide, reducing latency and improving load times. It implements HTTP/2 for faster page loads through request multiplexing. These features would require significant manual configuration on traditional hosting platforms but come automatically with modern cloud platforms.
 
-**Practical Skills Demonstrated:** This project proves I can work with asynchronous JavaScript operations, understanding promises and handling both success and failure cases. I can integrate with external APIs, implementing proper authentication and error handling. I understand responsive web design principles that ensure applications work across devices. I can deploy to cloud platforms and understand how those platforms provide value through automated SSL, CDN distribution, and continuous deployment.
-
-From a security perspective, the project demonstrates awareness that client-side code is fully visible to users and attackers. It shows I understand the need to move sensitive operations like API key management to backend services in production applications. It proves I can implement proper error handling that doesn't leak sensitive information to potential attackers while still providing useful feedback to legitimate users.
+**Practical Skills Demonstrated:** This project proves I can work with asynchronous JavaScript operations, understanding promises and handling both success and failure cases. I can integrate with external APIs, implementing proper authentication and error handling. I understand responsive web design principles that ensure applications work across devices. I can deploy to cloud platforms and understand how those platforms provide value through automated SSL, CDN distribution, and continuous deployment. From a security perspective, the project demonstrates awareness that client-side code is fully visible to users and attackers. It shows I understand the need to move sensitive operations like API key management to backend services in production applications. It proves I can implement proper error handling that doesn't leak sensitive information to potential attackers while still providing useful feedback to legitimate users.
 Technical Artifacts: Complete application source code with commented explanations of key decisions, screenshots showing the application functioning with multiple cities and weather conditions, deployed application URL demonstrating the live working application accessible globally.
-
-
-
-
-
-Build a functional weather application that integrates with external APIs and deploys to a cloud hosting platform, demonstrating skills in API integration and modern web deployment.
 
 **Technologies Used:**
 
@@ -42,6 +34,4 @@ HTML5, CSS3, JavaScript, OpenWeatherMap API, Netlify (Cloud Hosting Platform), R
 
 **Technical Implementation** The application uses JavaScript's Fetch API to make asynchronous calls to OpenWeatherMap's REST API. I implemented proper error handling for network failures and invalid city names. The code includes API key management practices, though in a production environment this would be moved to a backend service. CSS Grid and Flexbox create the responsive layout that adapts to different screen sizes. The deployment on Netlify provides automatic HTTPS, global CDN distribution, and continuous deployment capabilities.
 
-Why This Project Matters
-
-This project demonstrates my ability to integrate third-party services through APIs, which is essential in modern cloud architectures where applications consume multiple services. Understanding RESTful APIs and asynchronous programming is critical for building cloud-native applications. The deployment process taught me about continuous deployment platforms and content delivery networks, both important concepts in cloud computing.
+**Why This Project Matters** This project demonstrates my ability to integrate third-party services through APIs, which is essential in modern cloud architectures where applications consume multiple services. Understanding RESTful APIs and asynchronous programming is critical for building cloud-native applications. The deployment process taught me about continuous deployment platforms and content delivery networks, both important concepts in cloud computing.
